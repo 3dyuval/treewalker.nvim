@@ -1,4 +1,4 @@
-local nodes = require "treewalker.nodes"
+local nodes = require("treewalker.nodes")
 
 local M = {}
 
@@ -11,19 +11,19 @@ local M = {}
 ---@param node TSNode
 ---@return TSNode[]
 function M.get_node_augments(node)
-  local row = nodes.get_srow(node)
-  local augments = {}
-  while true do
-    local candidate = nodes.get_from_neighboring_line(row, "up")
-    if candidate and nodes.is_augment_target(candidate) then
-      table.insert(augments, candidate)
-      row = nodes.get_srow(candidate)
-    else
-      break
-    end
-  end
+	local row = nodes.get_srow(node)
+	local augments = {}
+	while true do
+		local candidate = nodes.get_from_neighboring_line(row, "up")
+		if candidate and nodes.is_augment_target(candidate) then
+			table.insert(augments, candidate)
+			row = nodes.get_srow(candidate)
+		else
+			break
+		end
+	end
 
-  return augments
+	return augments
 end
 
 return M

@@ -1,17 +1,22 @@
 <div align="center">
     <h1>Treewalker.nvim<br><br>🌳🌲🌴🌲🌴🌳</h1>
+    
+    <h2><strong>🚀 FORK: This is a fork of treewalker.nvim that includes parent navigation functionality</strong></h2>
+    
     <h4 align="center">
         <a href="#Installation">Installation</a>
         ·
         <a href="#Mapping">Mapping</a>
+        ·
+        <a href="#parent-navigation">Parent Navigation</a>
     </h4>
     <a href="https://neovim.io/">
         <img alt="Neovim" style="height: 20px;" src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&amp;style=for-the-badge&amp;logo=neovim&amp;logoColor=white">
     </a>
     <img alt="100% Lua" src="https://img.shields.io/badge/100%25_lua-purple" height="20px">
-    <img src="https://github.com/aaronik/treewalker.nvim/actions/workflows/test.yml/badge.svg" alt="build status">
-    <img src="https://img.shields.io/github/issues/aaronik/treewalker.nvim/bug?label=bugs" alt="GitHub issues by-label">
-    <img src="https://img.shields.io/github/issues-pr/aaronik/treewalker.nvim" alt="GitHub Pull Requests">
+    <img src="https://github.com/3dyuval/treewalker.nvim/actions/workflows/test.yml/badge.svg" alt="build status">
+    <img src="https://img.shields.io/github/issues/3dyuval/treewalker.nvim/bug?label=bugs" alt="GitHub issues by-label">
+    <img src="https://img.shields.io/github/issues-pr/3dyuval/treewalker.nvim" alt="GitHub Pull Requests">
 </div>
 
 <br>
@@ -43,6 +48,44 @@ For markdown files, Treewalker navigates around headings (#, ##, etc.)
 
 All movement commands by default add to the [`jumplist`](https://neovim.io/doc/user/motion.html#jumplist), so if you use a movement command
 and then feel lost, you have `Ctrl-o` available to bring you back to where you last were.
+
+---
+
+## Parent Navigation
+
+**🚀 NEW FEATURE: This fork includes parent navigation functionality that allows you to navigate up the syntax tree hierarchy.**
+
+The parent navigation command intelligently navigates to meaningful parent nodes, skipping trivial wrapper nodes like single-child containers and focusing on semantically important structures like function definitions, classes, control flow statements, and object declarations.
+
+* **`:Treewalker Parent`** - Moves to the next non-trivial parent node in the syntax tree
+
+### Examples of Parent Navigation
+
+```javascript
+const obj = {
+  a: {
+    b: {
+      c: function() {
+        if (condition) {
+          return "here"; // ← cursor position
+        }
+      }
+    }
+  }
+}
+```
+
+Starting from the cursor position on `"here"`, successive `:Treewalker Parent` commands would navigate to:
+1. The `return` statement
+2. The `if` statement  
+3. The `function` definition
+4. The object property `c`
+5. The object `b`
+6. The object property `b`
+7. The object `a`
+8. The root object declaration
+
+The parent navigation **intelligently skips trivial wrapper nodes** like expression statements, parenthesized expressions, and single-child containers, focusing on nodes that represent meaningful code structure boundaries.
 
 ---
 
@@ -86,10 +129,12 @@ Like in movement, swapping in markdown operates against headings.
 
 ## Installation
 
+**🚀 This is a fork with parent navigation functionality!** Use this fork's URL instead of the original.
+
 #### [Lazy](https://github.com/folke/lazy.nvim)
 ```lua
 {
-  'aaronik/treewalker.nvim',
+  '3dyuval/treewalker.nvim', -- **This fork with parent navigation**
 
   -- The following options are the defaults.
   -- Treewalker aims for sane defaults, so these are each individually optional,
@@ -120,7 +165,7 @@ Like in movement, swapping in markdown operates against headings.
 #### [Packer](https://github.com/wbthomason/packer.nvim)
 ```lua
 use {
-  'aaronik/treewalker.nvim',
+  '3dyuval/treewalker.nvim', -- **This fork with parent navigation**
 
   -- The setup function is optional, defaults are meant to be sane
   -- and setup does not need to be called
@@ -151,7 +196,7 @@ use {
 
 #### [Vim-plug](https://github.com/junegunn/vim-plug)
 ```vimscript
-Plug 'aaronik/treewalker.nvim'
+Plug '3dyuval/treewalker.nvim' " **This fork with parent navigation**
 
 " This line is optional
 :lua require('treewalker').setup({ highlight = true, highlight_duration = 250, highlight_group = 'CursorLine', jumplist = true })
@@ -162,7 +207,7 @@ Plug 'aaronik/treewalker.nvim'
 ## Mapping
 
 I've found Ctrl - h / j / k / l to be a really natural flow for this plugin, and adding
-Shift to that for swapping just felt so clean. So here are the mappings I use:
+Shift to that for swapping just felt so clean. **This fork adds parent navigation** which can be mapped to a convenient key.
 
 In `init.lua`:
 
@@ -172,6 +217,9 @@ vim.keymap.set({ 'n', 'v' }, '<C-k>', '<cmd>Treewalker Up<cr>', { silent = true 
 vim.keymap.set({ 'n', 'v' }, '<C-j>', '<cmd>Treewalker Down<cr>', { silent = true })
 vim.keymap.set({ 'n', 'v' }, '<C-h>', '<cmd>Treewalker Left<cr>', { silent = true })
 vim.keymap.set({ 'n', 'v' }, '<C-l>', '<cmd>Treewalker Right<cr>', { silent = true })
+
+-- 🚀 NEW: Parent navigation (this fork only)
+vim.keymap.set({ 'n', 'v' }, '<C-p>', '<cmd>Treewalker Parent<cr>', { silent = true })
 
 -- swapping
 vim.keymap.set('n', '<C-S-k>', '<cmd>Treewalker SwapUp<cr>', { silent = true })
@@ -230,4 +278,14 @@ provides a textobject, along with highlighting for the current treesitter unit
 (as navigated to by `Treewalker`). When combined with `Treewalker`, it's possible
 to perform edits in ways analogous to Vim's builtin `{}` motions and `p`
 textobject.
+
+---
+
+## **🚀 About This Fork**
+
+**This is a fork of [aaronik/treewalker.nvim](https://github.com/aaronik/treewalker.nvim) that adds parent navigation functionality.** 
+
+The original treewalker.nvim is an excellent plugin for syntax-aware navigation. This fork extends it with the ability to navigate up the syntax tree hierarchy to parent nodes, solving the "can navigate in but not out" problem while maintaining treewalker's philosophy of skipping uninteresting nodes.
+
+All credit for the original plugin goes to [aaronik](https://github.com/aaronik) and the original contributors. This fork only adds the parent navigation feature.
 

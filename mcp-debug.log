@@ -1,0 +1,2455 @@
+[2025-07-14T19:37:50.936Z] Starting FileScopeMCP server initialization
+[2025-07-14T19:37:50.941Z] Initial working directory: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.941Z] Command line args: /home/yuval/.nvm/versions/node/v20.19.3/bin/node,/home/yuval/mcp-servers/file-scope/dist/mcp-server.js,--base-dir=./
+[2025-07-14T19:37:50.942Z] ========== CONFIG DEBUGGING ==========
+[2025-07-14T19:37:50.943Z] Loaded config: {
+  "baseDirectory": "",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.943Z] Exclude patterns count: 0
+[2025-07-14T19:37:50.943Z] =====================================
+[2025-07-14T19:37:50.943Z] Using base directory from command line: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.945Z] Global state after initialization:
+[2025-07-14T19:37:50.945Z] - Project root: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.946Z] - Config loaded: true
+[2025-07-14T19:37:50.946Z] - Exclude patterns count: 0
+[2025-07-14T19:37:50.946Z] Changed working directory to: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.946Z] 
+🌲 BUILD FILE TREE STARTED
+[2025-07-14T19:37:50.946Z] ==========================================
+[2025-07-14T19:37:50.946Z] Building file tree with config: {
+  "filename": "FileScopeMCP-tree.json",
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "projectRoot": "/home/yuval/proj/treewalker.nvim",
+  "lastUpdated": "2025-07-14T19:37:50.946Z"
+}
+[2025-07-14T19:37:50.946Z] Current working directory: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.947Z] Config in global state: ✅ YES
+[2025-07-14T19:37:50.947Z] Global config exclude patterns count: 0
+[2025-07-14T19:37:50.948Z] ❌ Failed to load existing file tree: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/FileScopeMCP-tree.json'
+[2025-07-14T19:37:50.948Z] 🔍 Building new file tree for directory: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.948Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.949Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.949Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.949Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.950Z]   - Read 16 entries in directory
+[2025-07-14T19:37:50.950Z] 
+  Processing 16 entries in /home/yuval/proj/treewalker.nvim...
+[2025-07-14T19:37:50.950Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.950Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.950Z] 
+  Entry: .git (directory)
+[2025-07-14T19:37:50.950Z]   - Full path: /home/yuval/proj/treewalker.nvim/.git
+[2025-07-14T19:37:50.950Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/.git
+[2025-07-14T19:37:50.951Z] 🔴 SPECIAL CASE: .git directory/file detected: /home/yuval/proj/treewalker.nvim/.git
+[2025-07-14T19:37:50.951Z]   🔍 Exclusion check result: EXCLUDE ✅
+[2025-07-14T19:37:50.951Z]   - ✅ Skipping excluded path: /home/yuval/proj/treewalker.nvim/.git
+[2025-07-14T19:37:50.951Z] 
+  Entry: .github (directory)
+[2025-07-14T19:37:50.951Z]   - Full path: /home/yuval/proj/treewalker.nvim/.github
+[2025-07-14T19:37:50.951Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/.github
+[2025-07-14T19:37:50.951Z] 🔴 SPECIAL CASE: .git directory/file detected: /home/yuval/proj/treewalker.nvim/.github
+[2025-07-14T19:37:50.951Z]   🔍 Exclusion check result: EXCLUDE ✅
+[2025-07-14T19:37:50.951Z]   - ✅ Skipping excluded path: /home/yuval/proj/treewalker.nvim/.github
+[2025-07-14T19:37:50.951Z] 
+  Entry: .gitignore (file)
+[2025-07-14T19:37:50.951Z]   - Full path: /home/yuval/proj/treewalker.nvim/.gitignore
+[2025-07-14T19:37:50.951Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/.gitignore
+[2025-07-14T19:37:50.951Z] 🔴 SPECIAL CASE: .git directory/file detected: /home/yuval/proj/treewalker.nvim/.gitignore
+[2025-07-14T19:37:50.951Z]   🔍 Exclusion check result: EXCLUDE ✅
+[2025-07-14T19:37:50.951Z]   - ✅ Skipping excluded path: /home/yuval/proj/treewalker.nvim/.gitignore
+[2025-07-14T19:37:50.951Z] 
+  Entry: CLAUDE.md (file)
+[2025-07-14T19:37:50.951Z]   - Full path: /home/yuval/proj/treewalker.nvim/CLAUDE.md
+[2025-07-14T19:37:50.951Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/CLAUDE.md
+[2025-07-14T19:37:50.951Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/CLAUDE.md =====
+[2025-07-14T19:37:50.952Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.952Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.952Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.952Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/CLAUDE.md
+[2025-07-14T19:37:50.952Z]   - Processing file: /home/yuval/proj/treewalker.nvim/CLAUDE.md
+[2025-07-14T19:37:50.952Z] 
+  Entry: CONTRIBUTING.md (file)
+[2025-07-14T19:37:50.952Z]   - Full path: /home/yuval/proj/treewalker.nvim/CONTRIBUTING.md
+[2025-07-14T19:37:50.952Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/CONTRIBUTING.md
+[2025-07-14T19:37:50.952Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/CONTRIBUTING.md =====
+[2025-07-14T19:37:50.952Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.952Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.952Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.952Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/CONTRIBUTING.md
+[2025-07-14T19:37:50.952Z]   - Processing file: /home/yuval/proj/treewalker.nvim/CONTRIBUTING.md
+[2025-07-14T19:37:50.952Z] 
+  Entry: DEVELOPMENT.md (file)
+[2025-07-14T19:37:50.953Z]   - Full path: /home/yuval/proj/treewalker.nvim/DEVELOPMENT.md
+[2025-07-14T19:37:50.953Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/DEVELOPMENT.md
+[2025-07-14T19:37:50.953Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/DEVELOPMENT.md =====
+[2025-07-14T19:37:50.953Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.953Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.953Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.953Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/DEVELOPMENT.md
+[2025-07-14T19:37:50.953Z]   - Processing file: /home/yuval/proj/treewalker.nvim/DEVELOPMENT.md
+[2025-07-14T19:37:50.953Z] 
+  Entry: LICENSE (file)
+[2025-07-14T19:37:50.953Z]   - Full path: /home/yuval/proj/treewalker.nvim/LICENSE
+[2025-07-14T19:37:50.953Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/LICENSE
+[2025-07-14T19:37:50.953Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/LICENSE =====
+[2025-07-14T19:37:50.953Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.953Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.953Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.953Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/LICENSE
+[2025-07-14T19:37:50.953Z]   - Processing file: /home/yuval/proj/treewalker.nvim/LICENSE
+[2025-07-14T19:37:50.953Z] 
+  Entry: Makefile (file)
+[2025-07-14T19:37:50.953Z]   - Full path: /home/yuval/proj/treewalker.nvim/Makefile
+[2025-07-14T19:37:50.953Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/Makefile
+[2025-07-14T19:37:50.953Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/Makefile =====
+[2025-07-14T19:37:50.953Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.953Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.953Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.953Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/Makefile
+[2025-07-14T19:37:50.953Z]   - Processing file: /home/yuval/proj/treewalker.nvim/Makefile
+[2025-07-14T19:37:50.953Z] 
+  Entry: README.md (file)
+[2025-07-14T19:37:50.953Z]   - Full path: /home/yuval/proj/treewalker.nvim/README.md
+[2025-07-14T19:37:50.953Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/README.md
+[2025-07-14T19:37:50.954Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/README.md =====
+[2025-07-14T19:37:50.954Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.954Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.954Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.954Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/README.md
+[2025-07-14T19:37:50.954Z]   - Processing file: /home/yuval/proj/treewalker.nvim/README.md
+[2025-07-14T19:37:50.954Z] 
+  Entry: TODO.md (file)
+[2025-07-14T19:37:50.954Z]   - Full path: /home/yuval/proj/treewalker.nvim/TODO.md
+[2025-07-14T19:37:50.954Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/TODO.md
+[2025-07-14T19:37:50.954Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/TODO.md =====
+[2025-07-14T19:37:50.954Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.954Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.954Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.954Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/TODO.md
+[2025-07-14T19:37:50.954Z]   - Processing file: /home/yuval/proj/treewalker.nvim/TODO.md
+[2025-07-14T19:37:50.954Z] 
+  Entry: checks (directory)
+[2025-07-14T19:37:50.954Z]   - Full path: /home/yuval/proj/treewalker.nvim/checks
+[2025-07-14T19:37:50.954Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/checks
+[2025-07-14T19:37:50.954Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/checks =====
+[2025-07-14T19:37:50.954Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.954Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.954Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.954Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/checks
+[2025-07-14T19:37:50.954Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/checks
+[2025-07-14T19:37:50.954Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/checks
+[2025-07-14T19:37:50.954Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.954Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.954Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/checks
+[2025-07-14T19:37:50.955Z]   - Read 1 entries in directory
+[2025-07-14T19:37:50.955Z] 
+  Processing 1 entries in /home/yuval/proj/treewalker.nvim/checks...
+[2025-07-14T19:37:50.955Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.955Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.955Z] 
+  Entry: rogue_util_calls_spec.lua (file)
+[2025-07-14T19:37:50.955Z]   - Full path: /home/yuval/proj/treewalker.nvim/checks/rogue_util_calls_spec.lua
+[2025-07-14T19:37:50.955Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/checks/rogue_util_calls_spec.lua
+[2025-07-14T19:37:50.955Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/checks/rogue_util_calls_spec.lua =====
+[2025-07-14T19:37:50.955Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.955Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.955Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.955Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/checks/rogue_util_calls_spec.lua
+[2025-07-14T19:37:50.955Z]   - Processing file: /home/yuval/proj/treewalker.nvim/checks/rogue_util_calls_spec.lua
+[2025-07-14T19:37:50.956Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/checks/rogue_util_calls_spec.lua
+[2025-07-14T19:37:50.956Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/checks:
+[2025-07-14T19:37:50.956Z]     - Total entries: 1
+[2025-07-14T19:37:50.956Z]     - Excluded: 0
+[2025-07-14T19:37:50.956Z]     - Included: 1
+[2025-07-14T19:37:50.956Z]     - Directories processed: 0
+[2025-07-14T19:37:50.956Z]     - Files processed: 1
+[2025-07-14T19:37:50.956Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/checks
+
+[2025-07-14T19:37:50.956Z] 
+  Entry: lua (directory)
+[2025-07-14T19:37:50.956Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua
+[2025-07-14T19:37:50.956Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua
+[2025-07-14T19:37:50.956Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua =====
+[2025-07-14T19:37:50.956Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.956Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.956Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.956Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua
+[2025-07-14T19:37:50.956Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/lua
+[2025-07-14T19:37:50.956Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/lua
+[2025-07-14T19:37:50.956Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.956Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.956Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/lua
+[2025-07-14T19:37:50.956Z]   - Read 1 entries in directory
+[2025-07-14T19:37:50.957Z] 
+  Processing 1 entries in /home/yuval/proj/treewalker.nvim/lua...
+[2025-07-14T19:37:50.957Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.957Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.957Z] 
+  Entry: treewalker (directory)
+[2025-07-14T19:37:50.957Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker
+[2025-07-14T19:37:50.957Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker
+[2025-07-14T19:37:50.957Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker =====
+[2025-07-14T19:37:50.957Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.957Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.957Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.957Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker
+[2025-07-14T19:37:50.957Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/lua/treewalker
+[2025-07-14T19:37:50.957Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/lua/treewalker
+[2025-07-14T19:37:50.957Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.957Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.957Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/lua/treewalker
+[2025-07-14T19:37:50.957Z]   - Read 12 entries in directory
+[2025-07-14T19:37:50.957Z] 
+  Processing 12 entries in /home/yuval/proj/treewalker.nvim/lua/treewalker...
+[2025-07-14T19:37:50.957Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.957Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.957Z] 
+  Entry: augment.lua (file)
+[2025-07-14T19:37:50.957Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/augment.lua
+[2025-07-14T19:37:50.957Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/augment.lua
+[2025-07-14T19:37:50.957Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/augment.lua =====
+[2025-07-14T19:37:50.957Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.958Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.958Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.958Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/augment.lua
+[2025-07-14T19:37:50.958Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/augment.lua
+[2025-07-14T19:37:50.958Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/augment.lua
+[2025-07-14T19:37:50.958Z] 
+  Entry: init.lua (file)
+[2025-07-14T19:37:50.958Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/init.lua
+[2025-07-14T19:37:50.958Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/init.lua
+[2025-07-14T19:37:50.958Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/init.lua =====
+[2025-07-14T19:37:50.958Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.958Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.958Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.958Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/init.lua
+[2025-07-14T19:37:50.958Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/init.lua
+[2025-07-14T19:37:50.958Z] Found 3 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/init.lua
+[2025-07-14T19:37:50.959Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.movement
+[2025-07-14T19:37:50.959Z] Failed to extract package version for treewalker.movement: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.959Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.swap
+[2025-07-14T19:37:50.960Z] Failed to extract package version for treewalker.swap: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.960Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.options
+[2025-07-14T19:37:50.960Z] Failed to extract package version for treewalker.options: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.960Z] 
+  Entry: lines.lua (file)
+[2025-07-14T19:37:50.960Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/lines.lua
+[2025-07-14T19:37:50.960Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/lines.lua
+[2025-07-14T19:37:50.960Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/lines.lua =====
+[2025-07-14T19:37:50.960Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.960Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.960Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.960Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/lines.lua
+[2025-07-14T19:37:50.960Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/lines.lua
+[2025-07-14T19:37:50.961Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/lines.lua
+[2025-07-14T19:37:50.961Z] 
+  Entry: markdown (directory)
+[2025-07-14T19:37:50.961Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown
+[2025-07-14T19:37:50.961Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown
+[2025-07-14T19:37:50.961Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown =====
+[2025-07-14T19:37:50.961Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.961Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.961Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.961Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown
+[2025-07-14T19:37:50.961Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown
+[2025-07-14T19:37:50.961Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown
+[2025-07-14T19:37:50.961Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.961Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.961Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown
+[2025-07-14T19:37:50.961Z]   - Read 9 entries in directory
+[2025-07-14T19:37:50.961Z] 
+  Processing 9 entries in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown...
+[2025-07-14T19:37:50.961Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.961Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.961Z] 
+  Entry: ast_utils.lua (file)
+[2025-07-14T19:37:50.961Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/ast_utils.lua
+[2025-07-14T19:37:50.961Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/ast_utils.lua
+[2025-07-14T19:37:50.961Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/ast_utils.lua =====
+[2025-07-14T19:37:50.961Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.961Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.962Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.962Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/ast_utils.lua
+[2025-07-14T19:37:50.962Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/ast_utils.lua
+[2025-07-14T19:37:50.962Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/ast_utils.lua
+[2025-07-14T19:37:50.962Z] 
+  Entry: heading.lua (file)
+[2025-07-14T19:37:50.962Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/heading.lua
+[2025-07-14T19:37:50.962Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/heading.lua
+[2025-07-14T19:37:50.962Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/heading.lua =====
+[2025-07-14T19:37:50.962Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.962Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.962Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.962Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/heading.lua
+[2025-07-14T19:37:50.962Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/heading.lua
+[2025-07-14T19:37:50.962Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/heading.lua
+[2025-07-14T19:37:50.962Z] 
+  Entry: navigation.lua (file)
+[2025-07-14T19:37:50.962Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/navigation.lua
+[2025-07-14T19:37:50.962Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/navigation.lua
+[2025-07-14T19:37:50.962Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/navigation.lua =====
+[2025-07-14T19:37:50.963Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.963Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.963Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.963Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/navigation.lua
+[2025-07-14T19:37:50.963Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/navigation.lua
+[2025-07-14T19:37:50.963Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/navigation.lua
+[2025-07-14T19:37:50.963Z] 
+  Entry: section_utils.lua (file)
+[2025-07-14T19:37:50.963Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/section_utils.lua
+[2025-07-14T19:37:50.963Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/section_utils.lua
+[2025-07-14T19:37:50.963Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/section_utils.lua =====
+[2025-07-14T19:37:50.963Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.963Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.963Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.963Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/section_utils.lua
+[2025-07-14T19:37:50.963Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/section_utils.lua
+[2025-07-14T19:37:50.963Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/section_utils.lua
+[2025-07-14T19:37:50.963Z] 
+  Entry: selectors.lua (file)
+[2025-07-14T19:37:50.963Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/selectors.lua
+[2025-07-14T19:37:50.963Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/selectors.lua
+[2025-07-14T19:37:50.963Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/selectors.lua =====
+[2025-07-14T19:37:50.963Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.963Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.963Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.963Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/selectors.lua
+[2025-07-14T19:37:50.963Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/selectors.lua
+[2025-07-14T19:37:50.964Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/selectors.lua
+[2025-07-14T19:37:50.964Z] 
+  Entry: sibling_utils.lua (file)
+[2025-07-14T19:37:50.964Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/sibling_utils.lua
+[2025-07-14T19:37:50.964Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/sibling_utils.lua
+[2025-07-14T19:37:50.964Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/sibling_utils.lua =====
+[2025-07-14T19:37:50.964Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.964Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.964Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.964Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/sibling_utils.lua
+[2025-07-14T19:37:50.964Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/sibling_utils.lua
+[2025-07-14T19:37:50.964Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/sibling_utils.lua
+[2025-07-14T19:37:50.964Z] 
+  Entry: swap (directory)
+[2025-07-14T19:37:50.964Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap
+[2025-07-14T19:37:50.964Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap
+[2025-07-14T19:37:50.964Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap =====
+[2025-07-14T19:37:50.964Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.964Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.964Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.964Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap
+[2025-07-14T19:37:50.964Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap
+[2025-07-14T19:37:50.964Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap
+[2025-07-14T19:37:50.964Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.964Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.964Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap
+[2025-07-14T19:37:50.965Z]   - Read 1 entries in directory
+[2025-07-14T19:37:50.965Z] 
+  Processing 1 entries in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap...
+[2025-07-14T19:37:50.965Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.965Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.965Z] 
+  Entry: section.lua (file)
+[2025-07-14T19:37:50.965Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap/section.lua
+[2025-07-14T19:37:50.965Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap/section.lua
+[2025-07-14T19:37:50.965Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap/section.lua =====
+[2025-07-14T19:37:50.965Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.965Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.965Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.965Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap/section.lua
+[2025-07-14T19:37:50.965Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap/section.lua
+[2025-07-14T19:37:50.965Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap/section.lua
+[2025-07-14T19:37:50.965Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap:
+[2025-07-14T19:37:50.965Z]     - Total entries: 1
+[2025-07-14T19:37:50.965Z]     - Excluded: 0
+[2025-07-14T19:37:50.965Z]     - Included: 1
+[2025-07-14T19:37:50.965Z]     - Directories processed: 0
+[2025-07-14T19:37:50.965Z]     - Files processed: 1
+[2025-07-14T19:37:50.965Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap
+
+[2025-07-14T19:37:50.965Z] 
+  Entry: targets.lua (file)
+[2025-07-14T19:37:50.965Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/targets.lua
+[2025-07-14T19:37:50.965Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/targets.lua
+[2025-07-14T19:37:50.965Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/targets.lua =====
+[2025-07-14T19:37:50.965Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.965Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.965Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.965Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/targets.lua
+[2025-07-14T19:37:50.965Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/targets.lua
+[2025-07-14T19:37:50.965Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/targets.lua
+[2025-07-14T19:37:50.966Z] 
+  Entry: validation.lua (file)
+[2025-07-14T19:37:50.966Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/validation.lua
+[2025-07-14T19:37:50.966Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/validation.lua
+[2025-07-14T19:37:50.966Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/validation.lua =====
+[2025-07-14T19:37:50.966Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.966Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.966Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.966Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/validation.lua
+[2025-07-14T19:37:50.966Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/validation.lua
+[2025-07-14T19:37:50.966Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/validation.lua
+[2025-07-14T19:37:50.966Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown:
+[2025-07-14T19:37:50.966Z]     - Total entries: 9
+[2025-07-14T19:37:50.966Z]     - Excluded: 0
+[2025-07-14T19:37:50.966Z]     - Included: 9
+[2025-07-14T19:37:50.966Z]     - Directories processed: 1
+[2025-07-14T19:37:50.966Z]     - Files processed: 8
+[2025-07-14T19:37:50.966Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/lua/treewalker/markdown
+
+[2025-07-14T19:37:50.966Z] 
+  Entry: movement.lua (file)
+[2025-07-14T19:37:50.966Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/movement.lua
+[2025-07-14T19:37:50.966Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/movement.lua
+[2025-07-14T19:37:50.966Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/movement.lua =====
+[2025-07-14T19:37:50.966Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.966Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.966Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.966Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/movement.lua
+[2025-07-14T19:37:50.966Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/movement.lua
+[2025-07-14T19:37:50.967Z] Found 1 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/movement.lua
+[2025-07-14T19:37:50.967Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker
+[2025-07-14T19:37:50.967Z] Failed to extract package version for treewalker: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.967Z] 
+  Entry: nodes.lua (file)
+[2025-07-14T19:37:50.967Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/nodes.lua
+[2025-07-14T19:37:50.967Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/nodes.lua
+[2025-07-14T19:37:50.967Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/nodes.lua =====
+[2025-07-14T19:37:50.967Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.967Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.967Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.967Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/nodes.lua
+[2025-07-14T19:37:50.967Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/nodes.lua
+[2025-07-14T19:37:50.967Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/nodes.lua
+[2025-07-14T19:37:50.967Z] 
+  Entry: operations.lua (file)
+[2025-07-14T19:37:50.967Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/operations.lua
+[2025-07-14T19:37:50.967Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/operations.lua
+[2025-07-14T19:37:50.967Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/operations.lua =====
+[2025-07-14T19:37:50.967Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.967Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.967Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.967Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/operations.lua
+[2025-07-14T19:37:50.967Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/operations.lua
+[2025-07-14T19:37:50.968Z] Found 3 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/operations.lua
+[2025-07-14T19:37:50.968Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker
+[2025-07-14T19:37:50.968Z] Failed to extract package version for treewalker: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.968Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker
+[2025-07-14T19:37:50.968Z] Failed to extract package version for treewalker: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.968Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker
+[2025-07-14T19:37:50.968Z] Failed to extract package version for treewalker: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.968Z] 
+  Entry: options.lua (file)
+[2025-07-14T19:37:50.968Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/options.lua
+[2025-07-14T19:37:50.968Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/options.lua
+[2025-07-14T19:37:50.968Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/options.lua =====
+[2025-07-14T19:37:50.968Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.968Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.968Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.968Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/options.lua
+[2025-07-14T19:37:50.968Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/options.lua
+[2025-07-14T19:37:50.969Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/options.lua
+[2025-07-14T19:37:50.969Z] 
+  Entry: strategies.lua (file)
+[2025-07-14T19:37:50.969Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/strategies.lua
+[2025-07-14T19:37:50.969Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/strategies.lua
+[2025-07-14T19:37:50.969Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/strategies.lua =====
+[2025-07-14T19:37:50.969Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.969Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.969Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.969Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/strategies.lua
+[2025-07-14T19:37:50.969Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/strategies.lua
+[2025-07-14T19:37:50.969Z] Found 2 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/strategies.lua
+[2025-07-14T19:37:50.969Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.lines
+[2025-07-14T19:37:50.969Z] Failed to extract package version for treewalker.lines: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.969Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.nodes
+[2025-07-14T19:37:50.970Z] Failed to extract package version for treewalker.nodes: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.970Z] 
+  Entry: swap.lua (file)
+[2025-07-14T19:37:50.970Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/swap.lua
+[2025-07-14T19:37:50.970Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/swap.lua
+[2025-07-14T19:37:50.970Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/swap.lua =====
+[2025-07-14T19:37:50.970Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.970Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.970Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.970Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/swap.lua
+[2025-07-14T19:37:50.970Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/swap.lua
+[2025-07-14T19:37:50.970Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/swap.lua
+[2025-07-14T19:37:50.970Z] 
+  Entry: targets.lua (file)
+[2025-07-14T19:37:50.970Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/targets.lua
+[2025-07-14T19:37:50.970Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/targets.lua
+[2025-07-14T19:37:50.970Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/targets.lua =====
+[2025-07-14T19:37:50.970Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.970Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.970Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.970Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/targets.lua
+[2025-07-14T19:37:50.970Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/targets.lua
+[2025-07-14T19:37:50.971Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/targets.lua
+[2025-07-14T19:37:50.971Z] 
+  Entry: util.lua (file)
+[2025-07-14T19:37:50.971Z]   - Full path: /home/yuval/proj/treewalker.nvim/lua/treewalker/util.lua
+[2025-07-14T19:37:50.971Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/lua/treewalker/util.lua
+[2025-07-14T19:37:50.971Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/lua/treewalker/util.lua =====
+[2025-07-14T19:37:50.971Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.971Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.971Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.971Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/lua/treewalker/util.lua
+[2025-07-14T19:37:50.971Z]   - Processing file: /home/yuval/proj/treewalker.nvim/lua/treewalker/util.lua
+[2025-07-14T19:37:50.971Z] Found 1 potential imports in /home/yuval/proj/treewalker.nvim/lua/treewalker/util.lua
+[2025-07-14T19:37:50.971Z] Resolved path: /home/yuval/proj/treewalker.nvim/lua/treewalker/plenary.reload
+[2025-07-14T19:37:50.971Z] Failed to extract package version for plenary.reload: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.971Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/lua/treewalker:
+[2025-07-14T19:37:50.971Z]     - Total entries: 12
+[2025-07-14T19:37:50.971Z]     - Excluded: 0
+[2025-07-14T19:37:50.971Z]     - Included: 12
+[2025-07-14T19:37:50.971Z]     - Directories processed: 1
+[2025-07-14T19:37:50.971Z]     - Files processed: 11
+[2025-07-14T19:37:50.971Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/lua/treewalker
+
+[2025-07-14T19:37:50.971Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/lua:
+[2025-07-14T19:37:50.971Z]     - Total entries: 1
+[2025-07-14T19:37:50.971Z]     - Excluded: 0
+[2025-07-14T19:37:50.971Z]     - Included: 1
+[2025-07-14T19:37:50.971Z]     - Directories processed: 1
+[2025-07-14T19:37:50.971Z]     - Files processed: 0
+[2025-07-14T19:37:50.971Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/lua
+
+[2025-07-14T19:37:50.971Z] 
+  Entry: mcp-debug.log (file)
+[2025-07-14T19:37:50.972Z]   - Full path: /home/yuval/proj/treewalker.nvim/mcp-debug.log
+[2025-07-14T19:37:50.972Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/mcp-debug.log
+[2025-07-14T19:37:50.972Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/mcp-debug.log =====
+[2025-07-14T19:37:50.972Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.972Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.972Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.972Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/mcp-debug.log
+[2025-07-14T19:37:50.972Z]   - Processing file: /home/yuval/proj/treewalker.nvim/mcp-debug.log
+[2025-07-14T19:37:50.972Z] 
+  Entry: plugin (directory)
+[2025-07-14T19:37:50.972Z]   - Full path: /home/yuval/proj/treewalker.nvim/plugin
+[2025-07-14T19:37:50.972Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/plugin
+[2025-07-14T19:37:50.972Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/plugin =====
+[2025-07-14T19:37:50.972Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.972Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.972Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.972Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/plugin
+[2025-07-14T19:37:50.972Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/plugin
+[2025-07-14T19:37:50.972Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/plugin
+[2025-07-14T19:37:50.972Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.972Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.972Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/plugin
+[2025-07-14T19:37:50.972Z]   - Read 1 entries in directory
+[2025-07-14T19:37:50.972Z] 
+  Processing 1 entries in /home/yuval/proj/treewalker.nvim/plugin...
+[2025-07-14T19:37:50.972Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.972Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.972Z] 
+  Entry: init.lua (file)
+[2025-07-14T19:37:50.972Z]   - Full path: /home/yuval/proj/treewalker.nvim/plugin/init.lua
+[2025-07-14T19:37:50.972Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/plugin/init.lua
+[2025-07-14T19:37:50.972Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/plugin/init.lua =====
+[2025-07-14T19:37:50.972Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.972Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.972Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.972Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/plugin/init.lua
+[2025-07-14T19:37:50.972Z]   - Processing file: /home/yuval/proj/treewalker.nvim/plugin/init.lua
+[2025-07-14T19:37:50.973Z] Found 2 potential imports in /home/yuval/proj/treewalker.nvim/plugin/init.lua
+[2025-07-14T19:37:50.973Z] Resolved path: /home/yuval/proj/treewalker.nvim/plugin/treewalker
+[2025-07-14T19:37:50.973Z] Failed to extract package version for treewalker: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.973Z] Resolved path: /home/yuval/proj/treewalker.nvim/plugin/treewalker
+[2025-07-14T19:37:50.973Z] Failed to extract package version for treewalker: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.974Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/plugin:
+[2025-07-14T19:37:50.974Z]     - Total entries: 1
+[2025-07-14T19:37:50.974Z]     - Excluded: 0
+[2025-07-14T19:37:50.974Z]     - Included: 1
+[2025-07-14T19:37:50.974Z]     - Directories processed: 0
+[2025-07-14T19:37:50.974Z]     - Files processed: 1
+[2025-07-14T19:37:50.974Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/plugin
+
+[2025-07-14T19:37:50.974Z] 
+  Entry: static (directory)
+[2025-07-14T19:37:50.974Z]   - Full path: /home/yuval/proj/treewalker.nvim/static
+[2025-07-14T19:37:50.974Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/static
+[2025-07-14T19:37:50.974Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/static =====
+[2025-07-14T19:37:50.974Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.974Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.974Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.974Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/static
+[2025-07-14T19:37:50.974Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/static
+[2025-07-14T19:37:50.974Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/static
+[2025-07-14T19:37:50.974Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.974Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.974Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/static
+[2025-07-14T19:37:50.974Z]   - Read 2 entries in directory
+[2025-07-14T19:37:50.974Z] 
+  Processing 2 entries in /home/yuval/proj/treewalker.nvim/static...
+[2025-07-14T19:37:50.974Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.974Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.974Z] 
+  Entry: slow_move_demo.gif (file)
+[2025-07-14T19:37:50.974Z]   - Full path: /home/yuval/proj/treewalker.nvim/static/slow_move_demo.gif
+[2025-07-14T19:37:50.974Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/static/slow_move_demo.gif
+[2025-07-14T19:37:50.974Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/static/slow_move_demo.gif =====
+[2025-07-14T19:37:50.974Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.974Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.974Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.974Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/static/slow_move_demo.gif
+[2025-07-14T19:37:50.974Z]   - Processing file: /home/yuval/proj/treewalker.nvim/static/slow_move_demo.gif
+[2025-07-14T19:37:50.974Z] 
+  Entry: slow_swap_demo.gif (file)
+[2025-07-14T19:37:50.974Z]   - Full path: /home/yuval/proj/treewalker.nvim/static/slow_swap_demo.gif
+[2025-07-14T19:37:50.974Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/static/slow_swap_demo.gif
+[2025-07-14T19:37:50.974Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/static/slow_swap_demo.gif =====
+[2025-07-14T19:37:50.974Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.975Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.975Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.975Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/static/slow_swap_demo.gif
+[2025-07-14T19:37:50.975Z]   - Processing file: /home/yuval/proj/treewalker.nvim/static/slow_swap_demo.gif
+[2025-07-14T19:37:50.975Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/static:
+[2025-07-14T19:37:50.975Z]     - Total entries: 2
+[2025-07-14T19:37:50.975Z]     - Excluded: 0
+[2025-07-14T19:37:50.975Z]     - Included: 2
+[2025-07-14T19:37:50.975Z]     - Directories processed: 0
+[2025-07-14T19:37:50.975Z]     - Files processed: 2
+[2025-07-14T19:37:50.975Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/static
+
+[2025-07-14T19:37:50.975Z] 
+  Entry: tests (directory)
+[2025-07-14T19:37:50.975Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests
+[2025-07-14T19:37:50.975Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests
+[2025-07-14T19:37:50.975Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests =====
+[2025-07-14T19:37:50.975Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.975Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.975Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.975Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests
+[2025-07-14T19:37:50.975Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/tests
+[2025-07-14T19:37:50.975Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/tests
+[2025-07-14T19:37:50.975Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.975Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.975Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/tests
+[2025-07-14T19:37:50.975Z]   - Read 4 entries in directory
+[2025-07-14T19:37:50.975Z] 
+  Processing 4 entries in /home/yuval/proj/treewalker.nvim/tests...
+[2025-07-14T19:37:50.975Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.975Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.975Z] 
+  Entry: fixtures (directory)
+[2025-07-14T19:37:50.975Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures
+[2025-07-14T19:37:50.975Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures
+[2025-07-14T19:37:50.975Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures =====
+[2025-07-14T19:37:50.975Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.975Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.975Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.975Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures
+[2025-07-14T19:37:50.975Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/tests/fixtures
+[2025-07-14T19:37:50.975Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/tests/fixtures
+[2025-07-14T19:37:50.975Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.975Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.975Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/tests/fixtures
+[2025-07-14T19:37:50.976Z]   - Read 17 entries in directory
+[2025-07-14T19:37:50.976Z] 
+  Processing 17 entries in /home/yuval/proj/treewalker.nvim/tests/fixtures...
+[2025-07-14T19:37:50.976Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.976Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.976Z] 
+  Entry: c-sharp.cs (file)
+[2025-07-14T19:37:50.976Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/c-sharp.cs
+[2025-07-14T19:37:50.976Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/c-sharp.cs
+[2025-07-14T19:37:50.976Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/c-sharp.cs =====
+[2025-07-14T19:37:50.976Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.976Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.976Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.976Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/c-sharp.cs
+[2025-07-14T19:37:50.976Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/c-sharp.cs
+[2025-07-14T19:37:50.976Z] 
+  Entry: c.c (file)
+[2025-07-14T19:37:50.976Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/c.c
+[2025-07-14T19:37:50.976Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/c.c
+[2025-07-14T19:37:50.976Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/c.c =====
+[2025-07-14T19:37:50.976Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.976Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.976Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.976Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/c.c
+[2025-07-14T19:37:50.976Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/c.c
+[2025-07-14T19:37:50.978Z] Found 2 potential imports in /home/yuval/proj/treewalker.nvim/tests/fixtures/c.c
+[2025-07-14T19:37:50.979Z] 
+  Entry: haskell.hs (file)
+[2025-07-14T19:37:50.979Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/haskell.hs
+[2025-07-14T19:37:50.979Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/haskell.hs
+[2025-07-14T19:37:50.979Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/haskell.hs =====
+[2025-07-14T19:37:50.979Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.979Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.979Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.979Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/haskell.hs
+[2025-07-14T19:37:50.979Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/haskell.hs
+[2025-07-14T19:37:50.979Z] 
+  Entry: html.html (file)
+[2025-07-14T19:37:50.979Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/html.html
+[2025-07-14T19:37:50.979Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/html.html
+[2025-07-14T19:37:50.979Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/html.html =====
+[2025-07-14T19:37:50.979Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.979Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.979Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.979Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/html.html
+[2025-07-14T19:37:50.979Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/html.html
+[2025-07-14T19:37:50.979Z] 
+  Entry: javascript.js (file)
+[2025-07-14T19:37:50.979Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/javascript.js
+[2025-07-14T19:37:50.979Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/javascript.js
+[2025-07-14T19:37:50.979Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/javascript.js =====
+[2025-07-14T19:37:50.979Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.979Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.979Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.979Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/javascript.js
+[2025-07-14T19:37:50.979Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/javascript.js
+[2025-07-14T19:37:50.979Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/fixtures/javascript.js
+[2025-07-14T19:37:50.980Z] 
+  Entry: lua-spec.lua (file)
+[2025-07-14T19:37:50.980Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua-spec.lua
+[2025-07-14T19:37:50.980Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua-spec.lua
+[2025-07-14T19:37:50.980Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua-spec.lua =====
+[2025-07-14T19:37:50.980Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.980Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.980Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.980Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua-spec.lua
+[2025-07-14T19:37:50.980Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua-spec.lua
+[2025-07-14T19:37:50.980Z] Found 4 potential imports in /home/yuval/proj/treewalker.nvim/tests/fixtures/lua-spec.lua
+[2025-07-14T19:37:50.980Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/fixtures/treewalker.util
+[2025-07-14T19:37:50.980Z] Failed to extract package version for treewalker.util: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.980Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/fixtures/luassert.stub
+[2025-07-14T19:37:50.980Z] Failed to extract package version for luassert.stub: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.981Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/fixtures/luassert
+[2025-07-14T19:37:50.981Z] Failed to extract package version for luassert: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.981Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/fixtures/treewalker
+[2025-07-14T19:37:50.981Z] Failed to extract package version for treewalker: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.981Z] 
+  Entry: lua.lua (file)
+[2025-07-14T19:37:50.981Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua.lua
+[2025-07-14T19:37:50.981Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua.lua
+[2025-07-14T19:37:50.981Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua.lua =====
+[2025-07-14T19:37:50.981Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.981Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.981Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.981Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua.lua
+[2025-07-14T19:37:50.981Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/lua.lua
+[2025-07-14T19:37:50.981Z] Found 1 potential imports in /home/yuval/proj/treewalker.nvim/tests/fixtures/lua.lua
+[2025-07-14T19:37:50.981Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/fixtures/treewalker.util
+[2025-07-14T19:37:50.982Z] Failed to extract package version for treewalker.util: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.982Z] 
+  Entry: markdown-h2s.md (file)
+[2025-07-14T19:37:50.982Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown-h2s.md
+[2025-07-14T19:37:50.982Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown-h2s.md
+[2025-07-14T19:37:50.982Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown-h2s.md =====
+[2025-07-14T19:37:50.982Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.982Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.982Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.982Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown-h2s.md
+[2025-07-14T19:37:50.982Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown-h2s.md
+[2025-07-14T19:37:50.982Z] 
+  Entry: markdown.md (file)
+[2025-07-14T19:37:50.982Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown.md
+[2025-07-14T19:37:50.982Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown.md
+[2025-07-14T19:37:50.982Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown.md =====
+[2025-07-14T19:37:50.982Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.982Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.982Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.982Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown.md
+[2025-07-14T19:37:50.982Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/markdown.md
+[2025-07-14T19:37:50.982Z] 
+  Entry: php.php (file)
+[2025-07-14T19:37:50.982Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/php.php
+[2025-07-14T19:37:50.982Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/php.php
+[2025-07-14T19:37:50.982Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/php.php =====
+[2025-07-14T19:37:50.982Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.982Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.982Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.982Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/php.php
+[2025-07-14T19:37:50.982Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/php.php
+[2025-07-14T19:37:50.983Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/fixtures/php.php
+[2025-07-14T19:37:50.983Z] 
+  Entry: python.py (file)
+[2025-07-14T19:37:50.983Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/python.py
+[2025-07-14T19:37:50.983Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/python.py
+[2025-07-14T19:37:50.983Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/python.py =====
+[2025-07-14T19:37:50.983Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.983Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.983Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.983Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/python.py
+[2025-07-14T19:37:50.983Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/python.py
+[2025-07-14T19:37:50.983Z] Found 2 potential imports in /home/yuval/proj/treewalker.nvim/tests/fixtures/python.py
+[2025-07-14T19:37:50.983Z] 
+  Entry: random.not_real (file)
+[2025-07-14T19:37:50.983Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/random.not_real
+[2025-07-14T19:37:50.983Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/random.not_real
+[2025-07-14T19:37:50.983Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/random.not_real =====
+[2025-07-14T19:37:50.983Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.984Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.984Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.984Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/random.not_real
+[2025-07-14T19:37:50.984Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/random.not_real
+[2025-07-14T19:37:50.984Z] 
+  Entry: ruby.rb (file)
+[2025-07-14T19:37:50.984Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/ruby.rb
+[2025-07-14T19:37:50.984Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/ruby.rb
+[2025-07-14T19:37:50.984Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/ruby.rb =====
+[2025-07-14T19:37:50.984Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.984Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.984Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.984Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/ruby.rb
+[2025-07-14T19:37:50.984Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/ruby.rb
+[2025-07-14T19:37:50.984Z] 
+  Entry: rust.rs (file)
+[2025-07-14T19:37:50.984Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/rust.rs
+[2025-07-14T19:37:50.984Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/rust.rs
+[2025-07-14T19:37:50.984Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/rust.rs =====
+[2025-07-14T19:37:50.984Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.984Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.984Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.984Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/rust.rs
+[2025-07-14T19:37:50.984Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/rust.rs
+[2025-07-14T19:37:50.984Z] Found 4 potential imports in /home/yuval/proj/treewalker.nvim/tests/fixtures/rust.rs
+[2025-07-14T19:37:50.984Z] 
+  Entry: scheme.scm (file)
+[2025-07-14T19:37:50.984Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/scheme.scm
+[2025-07-14T19:37:50.984Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/scheme.scm
+[2025-07-14T19:37:50.984Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/scheme.scm =====
+[2025-07-14T19:37:50.984Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.984Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.984Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.985Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/scheme.scm
+[2025-07-14T19:37:50.985Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/scheme.scm
+[2025-07-14T19:37:50.985Z] 
+  Entry: typescript.ts (file)
+[2025-07-14T19:37:50.985Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts
+[2025-07-14T19:37:50.985Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts
+[2025-07-14T19:37:50.985Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts =====
+[2025-07-14T19:37:50.985Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.985Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.985Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.985Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts
+[2025-07-14T19:37:50.985Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts
+[2025-07-14T19:37:50.985Z] Found 2 potential imports in /home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts
+[2025-07-14T19:37:50.985Z] Resolving import path: ./logger from file: /home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts
+[2025-07-14T19:37:50.985Z] Resolved relative import to: /home/yuval/proj/treewalker.nvim/tests/fixtures/logger
+[2025-07-14T19:37:50.985Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/fixtures/logger
+[2025-07-14T19:37:50.986Z] Resolving import path: util from file: /home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts
+[2025-07-14T19:37:50.986Z] Resolved package import to: /home/yuval/proj/treewalker.nvim/node_modules/util
+[2025-07-14T19:37:50.986Z] Resolved path: /home/yuval/proj/treewalker.nvim/node_modules/util
+[2025-07-14T19:37:50.986Z] Failed to extract package version for util: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.986Z] 
+  Entry: yaml.yml (file)
+[2025-07-14T19:37:50.986Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/fixtures/yaml.yml
+[2025-07-14T19:37:50.986Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/fixtures/yaml.yml
+[2025-07-14T19:37:50.986Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/fixtures/yaml.yml =====
+[2025-07-14T19:37:50.986Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.986Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.986Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.986Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/fixtures/yaml.yml
+[2025-07-14T19:37:50.986Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/fixtures/yaml.yml
+[2025-07-14T19:37:50.986Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/tests/fixtures:
+[2025-07-14T19:37:50.986Z]     - Total entries: 17
+[2025-07-14T19:37:50.986Z]     - Excluded: 0
+[2025-07-14T19:37:50.986Z]     - Included: 17
+[2025-07-14T19:37:50.986Z]     - Directories processed: 0
+[2025-07-14T19:37:50.986Z]     - Files processed: 17
+[2025-07-14T19:37:50.986Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/tests/fixtures
+
+[2025-07-14T19:37:50.986Z] 
+  Entry: load_fixture.lua (file)
+[2025-07-14T19:37:50.986Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/load_fixture.lua
+[2025-07-14T19:37:50.986Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/load_fixture.lua
+[2025-07-14T19:37:50.986Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/load_fixture.lua =====
+[2025-07-14T19:37:50.986Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.987Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.987Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.987Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/load_fixture.lua
+[2025-07-14T19:37:50.987Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/load_fixture.lua
+[2025-07-14T19:37:50.987Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/load_fixture.lua
+[2025-07-14T19:37:50.987Z] 
+  Entry: minimal_init.lua (file)
+[2025-07-14T19:37:50.987Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/minimal_init.lua
+[2025-07-14T19:37:50.987Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/minimal_init.lua
+[2025-07-14T19:37:50.987Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/minimal_init.lua =====
+[2025-07-14T19:37:50.987Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.987Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.987Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.987Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/minimal_init.lua
+[2025-07-14T19:37:50.987Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/minimal_init.lua
+[2025-07-14T19:37:50.987Z] Found 1 potential imports in /home/yuval/proj/treewalker.nvim/tests/minimal_init.lua
+[2025-07-14T19:37:50.987Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/nvim-treesitter.configs
+[2025-07-14T19:37:50.987Z] Failed to extract package version for nvim-treesitter.configs: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.988Z] 
+  Entry: treewalker (directory)
+[2025-07-14T19:37:50.988Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker
+[2025-07-14T19:37:50.988Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker
+[2025-07-14T19:37:50.988Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker =====
+[2025-07-14T19:37:50.988Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.988Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.988Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.988Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker
+[2025-07-14T19:37:50.988Z]   - Processing directory: /home/yuval/proj/treewalker.nvim/tests/treewalker
+[2025-07-14T19:37:50.988Z] 
+📁 SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/tests/treewalker
+[2025-07-14T19:37:50.988Z]   - Base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.988Z]   - Normalized base dir: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:37:50.988Z]   - Normalized current dir: /home/yuval/proj/treewalker.nvim/tests/treewalker
+[2025-07-14T19:37:50.988Z]   - Read 19 entries in directory
+[2025-07-14T19:37:50.988Z] 
+  Processing 19 entries in /home/yuval/proj/treewalker.nvim/tests/treewalker...
+[2025-07-14T19:37:50.988Z] 
+🔍 BEFORE PROCESSING: Is config loaded? YES ✅
+[2025-07-14T19:37:50.988Z]   - Exclude patterns count: 0
+[2025-07-14T19:37:50.988Z] 
+  Entry: c_sharp_spec.lua (file)
+[2025-07-14T19:37:50.988Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_sharp_spec.lua
+[2025-07-14T19:37:50.988Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_sharp_spec.lua
+[2025-07-14T19:37:50.988Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_sharp_spec.lua =====
+[2025-07-14T19:37:50.988Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.988Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.988Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.988Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_sharp_spec.lua
+[2025-07-14T19:37:50.988Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_sharp_spec.lua
+[2025-07-14T19:37:50.988Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/c_sharp_spec.lua
+[2025-07-14T19:37:50.989Z] 
+  Entry: c_spec.lua (file)
+[2025-07-14T19:37:50.989Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_spec.lua
+[2025-07-14T19:37:50.989Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_spec.lua
+[2025-07-14T19:37:50.989Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_spec.lua =====
+[2025-07-14T19:37:50.989Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.989Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.989Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.989Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_spec.lua
+[2025-07-14T19:37:50.989Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/c_spec.lua
+[2025-07-14T19:37:50.989Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/c_spec.lua
+[2025-07-14T19:37:50.989Z] 
+  Entry: haskell_spec.lua (file)
+[2025-07-14T19:37:50.989Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/haskell_spec.lua
+[2025-07-14T19:37:50.989Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/haskell_spec.lua
+[2025-07-14T19:37:50.989Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/haskell_spec.lua =====
+[2025-07-14T19:37:50.989Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.989Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.989Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.989Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/haskell_spec.lua
+[2025-07-14T19:37:50.989Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/haskell_spec.lua
+[2025-07-14T19:37:50.989Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/haskell_spec.lua
+[2025-07-14T19:37:50.989Z] 
+  Entry: helpers.lua (file)
+[2025-07-14T19:37:50.989Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/helpers.lua
+[2025-07-14T19:37:50.989Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/helpers.lua
+[2025-07-14T19:37:50.989Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/helpers.lua =====
+[2025-07-14T19:37:50.989Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.990Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.990Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.990Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/helpers.lua
+[2025-07-14T19:37:50.990Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/helpers.lua
+[2025-07-14T19:37:50.990Z] Found 2 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/helpers.lua
+[2025-07-14T19:37:50.990Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/luassert
+[2025-07-14T19:37:50.990Z] Failed to extract package version for luassert: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.990Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.lines
+[2025-07-14T19:37:50.990Z] Failed to extract package version for treewalker.lines: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.990Z] 
+  Entry: highlight_spec.lua (file)
+[2025-07-14T19:37:50.990Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/highlight_spec.lua
+[2025-07-14T19:37:50.990Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/highlight_spec.lua
+[2025-07-14T19:37:50.990Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/highlight_spec.lua =====
+[2025-07-14T19:37:50.990Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.990Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.990Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.990Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/highlight_spec.lua
+[2025-07-14T19:37:50.990Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/highlight_spec.lua
+[2025-07-14T19:37:50.991Z] Found 1 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/highlight_spec.lua
+[2025-07-14T19:37:50.991Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker
+[2025-07-14T19:37:50.991Z] Failed to extract package version for treewalker: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.991Z] 
+  Entry: html_spec.lua (file)
+[2025-07-14T19:37:50.991Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/html_spec.lua
+[2025-07-14T19:37:50.991Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/html_spec.lua
+[2025-07-14T19:37:50.991Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/html_spec.lua =====
+[2025-07-14T19:37:50.991Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.991Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.991Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.991Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/html_spec.lua
+[2025-07-14T19:37:50.991Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/html_spec.lua
+[2025-07-14T19:37:50.991Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/html_spec.lua
+[2025-07-14T19:37:50.991Z] 
+  Entry: jump_list_spec.lua (file)
+[2025-07-14T19:37:50.991Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/jump_list_spec.lua
+[2025-07-14T19:37:50.991Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/jump_list_spec.lua
+[2025-07-14T19:37:50.991Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/jump_list_spec.lua =====
+[2025-07-14T19:37:50.991Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.992Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.992Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.992Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/jump_list_spec.lua
+[2025-07-14T19:37:50.992Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/jump_list_spec.lua
+[2025-07-14T19:37:50.992Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/jump_list_spec.lua
+[2025-07-14T19:37:50.992Z] 
+  Entry: lines_spec.lua (file)
+[2025-07-14T19:37:50.992Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/lines_spec.lua
+[2025-07-14T19:37:50.992Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/lines_spec.lua
+[2025-07-14T19:37:50.992Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/lines_spec.lua =====
+[2025-07-14T19:37:50.992Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.992Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.992Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.992Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/lines_spec.lua
+[2025-07-14T19:37:50.992Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/lines_spec.lua
+[2025-07-14T19:37:50.992Z] Found 4 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/lines_spec.lua
+[2025-07-14T19:37:50.992Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.lines
+[2025-07-14T19:37:50.992Z] Failed to extract package version for treewalker.lines: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.992Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/luassert
+[2025-07-14T19:37:50.993Z] Failed to extract package version for luassert: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.993Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/tests.load_fixture
+[2025-07-14T19:37:50.993Z] Failed to extract package version for tests.load_fixture: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.993Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.util
+[2025-07-14T19:37:50.993Z] Failed to extract package version for treewalker.util: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.993Z] 
+  Entry: lua_spec.lua (file)
+[2025-07-14T19:37:50.993Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec.lua
+[2025-07-14T19:37:50.993Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec.lua
+[2025-07-14T19:37:50.993Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec.lua =====
+[2025-07-14T19:37:50.993Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.993Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.993Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.993Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec.lua
+[2025-07-14T19:37:50.993Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec.lua
+[2025-07-14T19:37:50.994Z] Found 2 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec.lua
+[2025-07-14T19:37:50.994Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.util
+[2025-07-14T19:37:50.994Z] Failed to extract package version for treewalker.util: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.994Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.util
+[2025-07-14T19:37:50.994Z] Failed to extract package version for treewalker.util: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:50.994Z] 
+  Entry: lua_spec_spec.lua (file)
+[2025-07-14T19:37:50.994Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec_spec.lua
+[2025-07-14T19:37:50.994Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec_spec.lua
+[2025-07-14T19:37:50.994Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec_spec.lua =====
+[2025-07-14T19:37:50.994Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.994Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.994Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.994Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec_spec.lua
+[2025-07-14T19:37:50.994Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec_spec.lua
+[2025-07-14T19:37:50.994Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec_spec.lua
+[2025-07-14T19:37:50.994Z] 
+  Entry: markdown_spec.lua (file)
+[2025-07-14T19:37:50.995Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/markdown_spec.lua
+[2025-07-14T19:37:50.995Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/markdown_spec.lua
+[2025-07-14T19:37:50.995Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/markdown_spec.lua =====
+[2025-07-14T19:37:50.995Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.995Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.995Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.995Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/markdown_spec.lua
+[2025-07-14T19:37:50.995Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/markdown_spec.lua
+[2025-07-14T19:37:50.995Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/markdown_spec.lua
+[2025-07-14T19:37:50.995Z] 
+  Entry: missing_parser_spec.lua (file)
+[2025-07-14T19:37:50.995Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/missing_parser_spec.lua
+[2025-07-14T19:37:50.995Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/missing_parser_spec.lua
+[2025-07-14T19:37:50.995Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/missing_parser_spec.lua =====
+[2025-07-14T19:37:50.995Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.995Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.995Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.995Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/missing_parser_spec.lua
+[2025-07-14T19:37:50.995Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/missing_parser_spec.lua
+[2025-07-14T19:37:50.995Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/missing_parser_spec.lua
+[2025-07-14T19:37:50.995Z] 
+  Entry: options_spec.lua (file)
+[2025-07-14T19:37:50.995Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/options_spec.lua
+[2025-07-14T19:37:50.995Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/options_spec.lua
+[2025-07-14T19:37:50.995Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/options_spec.lua =====
+[2025-07-14T19:37:50.995Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.996Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.996Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.996Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/options_spec.lua
+[2025-07-14T19:37:50.996Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/options_spec.lua
+[2025-07-14T19:37:50.996Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/options_spec.lua
+[2025-07-14T19:37:50.996Z] 
+  Entry: php_spec.lua (file)
+[2025-07-14T19:37:50.996Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/php_spec.lua
+[2025-07-14T19:37:50.996Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/php_spec.lua
+[2025-07-14T19:37:50.996Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/php_spec.lua =====
+[2025-07-14T19:37:50.996Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:50.996Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:50.996Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:50.996Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/php_spec.lua
+[2025-07-14T19:37:50.996Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/php_spec.lua
+[2025-07-14T19:37:51.000Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/php_spec.lua
+[2025-07-14T19:37:51.000Z] 
+  Entry: python_spec.lua (file)
+[2025-07-14T19:37:51.000Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/python_spec.lua
+[2025-07-14T19:37:51.000Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/python_spec.lua
+[2025-07-14T19:37:51.000Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/python_spec.lua =====
+[2025-07-14T19:37:51.001Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:51.001Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:51.001Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:51.001Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/python_spec.lua
+[2025-07-14T19:37:51.001Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/python_spec.lua
+[2025-07-14T19:37:51.001Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/python_spec.lua
+[2025-07-14T19:37:51.001Z] 
+  Entry: ruby_spec.lua (file)
+[2025-07-14T19:37:51.001Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/ruby_spec.lua
+[2025-07-14T19:37:51.001Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/ruby_spec.lua
+[2025-07-14T19:37:51.001Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/ruby_spec.lua =====
+[2025-07-14T19:37:51.001Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:51.001Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:51.001Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:51.001Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/ruby_spec.lua
+[2025-07-14T19:37:51.001Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/ruby_spec.lua
+[2025-07-14T19:37:51.001Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/ruby_spec.lua
+[2025-07-14T19:37:51.001Z] 
+  Entry: rust_spec.lua (file)
+[2025-07-14T19:37:51.001Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/rust_spec.lua
+[2025-07-14T19:37:51.001Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/rust_spec.lua
+[2025-07-14T19:37:51.001Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/rust_spec.lua =====
+[2025-07-14T19:37:51.001Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:51.001Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:51.001Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:51.002Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/rust_spec.lua
+[2025-07-14T19:37:51.002Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/rust_spec.lua
+[2025-07-14T19:37:51.002Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/rust_spec.lua
+[2025-07-14T19:37:51.002Z] 
+  Entry: typescript_spec.lua (file)
+[2025-07-14T19:37:51.002Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/typescript_spec.lua
+[2025-07-14T19:37:51.002Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/typescript_spec.lua
+[2025-07-14T19:37:51.002Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/typescript_spec.lua =====
+[2025-07-14T19:37:51.002Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:51.002Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:51.002Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:51.002Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/typescript_spec.lua
+[2025-07-14T19:37:51.002Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/typescript_spec.lua
+[2025-07-14T19:37:51.002Z] Found 0 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/typescript_spec.lua
+[2025-07-14T19:37:51.002Z] 
+  Entry: util_spec.lua (file)
+[2025-07-14T19:37:51.002Z]   - Full path: /home/yuval/proj/treewalker.nvim/tests/treewalker/util_spec.lua
+[2025-07-14T19:37:51.002Z]   🔍 Checking if path should be excluded: /home/yuval/proj/treewalker.nvim/tests/treewalker/util_spec.lua
+[2025-07-14T19:37:51.002Z] 
+===== EXCLUDE CHECK for: /home/yuval/proj/treewalker.nvim/tests/treewalker/util_spec.lua =====
+[2025-07-14T19:37:51.002Z] ❌ WARNING: No exclude patterns found in config!
+[2025-07-14T19:37:51.002Z] Config object: {
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:37:51.002Z]   🔍 Exclusion check result: INCLUDE ❌
+[2025-07-14T19:37:51.002Z]   - ✅ Including path: /home/yuval/proj/treewalker.nvim/tests/treewalker/util_spec.lua
+[2025-07-14T19:37:51.002Z]   - Processing file: /home/yuval/proj/treewalker.nvim/tests/treewalker/util_spec.lua
+[2025-07-14T19:37:51.003Z] Found 3 potential imports in /home/yuval/proj/treewalker.nvim/tests/treewalker/util_spec.lua
+[2025-07-14T19:37:51.003Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.util
+[2025-07-14T19:37:51.003Z] Failed to extract package version for treewalker.util: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:51.003Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/luassert.stub
+[2025-07-14T19:37:51.003Z] Failed to extract package version for luassert.stub: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:51.003Z] Resolved path: /home/yuval/proj/treewalker.nvim/tests/treewalker/luassert
+[2025-07-14T19:37:51.003Z] Failed to extract package version for luassert: Error: ENOENT: no such file or directory, open '/home/yuval/proj/treewalker.nvim/package.json'
+[2025-07-14T19:37:51.003Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/tests/treewalker:
+[2025-07-14T19:37:51.003Z]     - Total entries: 19
+[2025-07-14T19:37:51.003Z]     - Excluded: 0
+[2025-07-14T19:37:51.003Z]     - Included: 19
+[2025-07-14T19:37:51.004Z]     - Directories processed: 0
+[2025-07-14T19:37:51.004Z]     - Files processed: 19
+[2025-07-14T19:37:51.004Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/tests/treewalker
+
+[2025-07-14T19:37:51.004Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim/tests:
+[2025-07-14T19:37:51.004Z]     - Total entries: 4
+[2025-07-14T19:37:51.004Z]     - Excluded: 0
+[2025-07-14T19:37:51.004Z]     - Included: 4
+[2025-07-14T19:37:51.004Z]     - Directories processed: 2
+[2025-07-14T19:37:51.004Z]     - Files processed: 2
+[2025-07-14T19:37:51.004Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim/tests
+
+[2025-07-14T19:37:51.004Z] 
+  📊 DIRECTORY SCAN SUMMARY for /home/yuval/proj/treewalker.nvim:
+[2025-07-14T19:37:51.004Z]     - Total entries: 16
+[2025-07-14T19:37:51.004Z]     - Excluded: 3
+[2025-07-14T19:37:51.004Z]     - Included: 13
+[2025-07-14T19:37:51.004Z]     - Directories processed: 5
+[2025-07-14T19:37:51.004Z]     - Files processed: 8
+[2025-07-14T19:37:51.004Z]   📁 END SCAN DIRECTORY: /home/yuval/proj/treewalker.nvim
+
+[2025-07-14T19:37:51.004Z] ✅ Successfully scanned directory, found 13 top-level entries
+[2025-07-14T19:37:51.004Z] 📊 Building dependency map...
+[2025-07-14T19:37:51.004Z] 📈 Calculating importance values...
+[2025-07-14T19:37:51.005Z] 💾 Saving file tree to: FileScopeMCP-tree.json
+[2025-07-14T19:37:51.006Z] ✅ Successfully saved file tree
+[2025-07-14T19:37:51.006Z] 🌲 BUILD FILE TREE COMPLETED (built from scratch)
+[2025-07-14T19:37:51.006Z] ==========================================
+
+[2025-07-14T19:37:51.006Z] File watching is disabled in config
+[2025-07-14T19:40:25.064Z] Starting FileScopeMCP server initialization
+[2025-07-14T19:40:25.068Z] Initial working directory: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:40:25.069Z] Command line args: /home/yuval/.nvm/versions/node/v20.19.3/bin/node,/home/yuval/mcp-servers/file-scope/dist/mcp-server.js,--base-dir=./
+[2025-07-14T19:40:25.070Z] ========== CONFIG DEBUGGING ==========
+[2025-07-14T19:40:25.070Z] Loaded config: {
+  "baseDirectory": "",
+  "excludePatterns": [],
+  "fileWatching": {
+    "enabled": false,
+    "debounceMs": 300,
+    "ignoreDotFiles": true,
+    "autoRebuildTree": true,
+    "maxWatchedDirectories": 1000,
+    "watchForNewFiles": true,
+    "watchForDeleted": true,
+    "watchForChanged": true
+  },
+  "version": "1.0.0"
+}
+[2025-07-14T19:40:25.070Z] Exclude patterns count: 0
+[2025-07-14T19:40:25.070Z] =====================================
+[2025-07-14T19:40:25.070Z] Using base directory from command line: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:40:25.071Z] Global state after initialization:
+[2025-07-14T19:40:25.071Z] - Project root: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:40:25.072Z] - Config loaded: true
+[2025-07-14T19:40:25.072Z] - Exclude patterns count: 0
+[2025-07-14T19:40:25.072Z] Changed working directory to: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:40:25.072Z] 
+🌲 BUILD FILE TREE STARTED
+[2025-07-14T19:40:25.072Z] ==========================================
+[2025-07-14T19:40:25.072Z] Building file tree with config: {
+  "filename": "FileScopeMCP-tree.json",
+  "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+  "projectRoot": "/home/yuval/proj/treewalker.nvim",
+  "lastUpdated": "2025-07-14T19:40:25.072Z"
+}
+[2025-07-14T19:40:25.072Z] Current working directory: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:40:25.072Z] Config in global state: ✅ YES
+[2025-07-14T19:40:25.072Z] Global config exclude patterns count: 0
+[2025-07-14T19:40:25.075Z] ✅ Using existing file tree from: FileScopeMCP-tree.json
+[2025-07-14T19:40:25.075Z] Tree root path: /home/yuval/proj/treewalker.nvim
+[2025-07-14T19:40:25.075Z] Tree has children: 13
+[2025-07-14T19:40:25.075Z] 🌲 BUILD FILE TREE COMPLETED (loaded from file)
+[2025-07-14T19:40:25.075Z] ==========================================
+
+[2025-07-14T19:40:25.075Z] File watching is disabled in config

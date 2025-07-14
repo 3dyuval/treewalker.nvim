@@ -1,0 +1,854 @@
+{
+  "config": {
+    "filename": "FileScopeMCP-tree.json",
+    "baseDirectory": "/home/yuval/proj/treewalker.nvim",
+    "projectRoot": "/home/yuval/proj/treewalker.nvim",
+    "lastUpdated": "2025-07-14T19:37:51.005Z"
+  },
+  "fileTree": {
+    "path": "/home/yuval/proj/treewalker.nvim",
+    "name": "treewalker.nvim",
+    "isDirectory": true,
+    "children": [
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/CLAUDE.md",
+        "name": "CLAUDE.md",
+        "isDirectory": false,
+        "importance": 1,
+        "dependencies": [],
+        "packageDependencies": [],
+        "dependents": []
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/CONTRIBUTING.md",
+        "name": "CONTRIBUTING.md",
+        "isDirectory": false,
+        "importance": 1,
+        "dependencies": [],
+        "packageDependencies": [],
+        "dependents": []
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/DEVELOPMENT.md",
+        "name": "DEVELOPMENT.md",
+        "isDirectory": false,
+        "importance": 1,
+        "dependencies": [],
+        "packageDependencies": [],
+        "dependents": []
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/LICENSE",
+        "name": "LICENSE",
+        "isDirectory": false,
+        "importance": 0,
+        "dependencies": [],
+        "packageDependencies": [],
+        "dependents": []
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/Makefile",
+        "name": "Makefile",
+        "isDirectory": false,
+        "importance": 0,
+        "dependencies": [],
+        "packageDependencies": [],
+        "dependents": []
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/README.md",
+        "name": "README.md",
+        "isDirectory": false,
+        "importance": 2,
+        "dependencies": [],
+        "packageDependencies": [],
+        "dependents": []
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/TODO.md",
+        "name": "TODO.md",
+        "isDirectory": false,
+        "importance": 1,
+        "dependencies": [],
+        "packageDependencies": [],
+        "dependents": []
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/checks",
+        "name": "checks",
+        "isDirectory": true,
+        "children": [
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/checks/rogue_util_calls_spec.lua",
+            "name": "rogue_util_calls_spec.lua",
+            "isDirectory": false,
+            "importance": 0,
+            "dependencies": [],
+            "packageDependencies": [],
+            "dependents": []
+          }
+        ]
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/lua",
+        "name": "lua",
+        "isDirectory": true,
+        "children": [
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker",
+            "name": "treewalker",
+            "isDirectory": true,
+            "children": [
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/augment.lua",
+                "name": "augment.lua",
+                "isDirectory": false,
+                "importance": 0,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/init.lua",
+                "name": "init.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker.movement",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.movement"
+                  },
+                  {
+                    "name": "treewalker.swap",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.swap"
+                  },
+                  {
+                    "name": "treewalker.options",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.options"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/lines.lua",
+                "name": "lines.lua",
+                "isDirectory": false,
+                "importance": 0,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown",
+                "name": "markdown",
+                "isDirectory": true,
+                "children": [
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/ast_utils.lua",
+                    "name": "ast_utils.lua",
+                    "isDirectory": false,
+                    "importance": 0,
+                    "dependencies": [],
+                    "packageDependencies": [],
+                    "dependents": []
+                  },
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/heading.lua",
+                    "name": "heading.lua",
+                    "isDirectory": false,
+                    "importance": 0,
+                    "dependencies": [],
+                    "packageDependencies": [],
+                    "dependents": []
+                  },
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/navigation.lua",
+                    "name": "navigation.lua",
+                    "isDirectory": false,
+                    "importance": 0,
+                    "dependencies": [],
+                    "packageDependencies": [],
+                    "dependents": []
+                  },
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/section_utils.lua",
+                    "name": "section_utils.lua",
+                    "isDirectory": false,
+                    "importance": 0,
+                    "dependencies": [],
+                    "packageDependencies": [],
+                    "dependents": []
+                  },
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/selectors.lua",
+                    "name": "selectors.lua",
+                    "isDirectory": false,
+                    "importance": 0,
+                    "dependencies": [],
+                    "packageDependencies": [],
+                    "dependents": []
+                  },
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/sibling_utils.lua",
+                    "name": "sibling_utils.lua",
+                    "isDirectory": false,
+                    "importance": 0,
+                    "dependencies": [],
+                    "packageDependencies": [],
+                    "dependents": []
+                  },
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap",
+                    "name": "swap",
+                    "isDirectory": true,
+                    "children": [
+                      {
+                        "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/swap/section.lua",
+                        "name": "section.lua",
+                        "isDirectory": false,
+                        "importance": 0,
+                        "dependencies": [],
+                        "packageDependencies": [],
+                        "dependents": []
+                      }
+                    ]
+                  },
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/targets.lua",
+                    "name": "targets.lua",
+                    "isDirectory": false,
+                    "importance": 0,
+                    "dependencies": [],
+                    "packageDependencies": [],
+                    "dependents": []
+                  },
+                  {
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/markdown/validation.lua",
+                    "name": "validation.lua",
+                    "isDirectory": false,
+                    "importance": 0,
+                    "dependencies": [],
+                    "packageDependencies": [],
+                    "dependents": []
+                  }
+                ]
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/movement.lua",
+                "name": "movement.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/nodes.lua",
+                "name": "nodes.lua",
+                "isDirectory": false,
+                "importance": 0,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/operations.lua",
+                "name": "operations.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker"
+                  },
+                  {
+                    "name": "treewalker",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker"
+                  },
+                  {
+                    "name": "treewalker",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/options.lua",
+                "name": "options.lua",
+                "isDirectory": false,
+                "importance": 0,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/strategies.lua",
+                "name": "strategies.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker.lines",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.lines"
+                  },
+                  {
+                    "name": "treewalker.nodes",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/treewalker.nodes"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/swap.lua",
+                "name": "swap.lua",
+                "isDirectory": false,
+                "importance": 0,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/targets.lua",
+                "name": "targets.lua",
+                "isDirectory": false,
+                "importance": 0,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/util.lua",
+                "name": "util.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "plenary.reload",
+                    "path": "/home/yuval/proj/treewalker.nvim/lua/treewalker/plenary.reload"
+                  }
+                ],
+                "dependents": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/mcp-debug.log",
+        "name": "mcp-debug.log",
+        "isDirectory": false,
+        "importance": 0,
+        "dependencies": [],
+        "packageDependencies": [],
+        "dependents": []
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/plugin",
+        "name": "plugin",
+        "isDirectory": true,
+        "children": [
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/plugin/init.lua",
+            "name": "init.lua",
+            "isDirectory": false,
+            "importance": 1,
+            "dependencies": [],
+            "packageDependencies": [
+              {
+                "name": "treewalker",
+                "path": "/home/yuval/proj/treewalker.nvim/plugin/treewalker"
+              },
+              {
+                "name": "treewalker",
+                "path": "/home/yuval/proj/treewalker.nvim/plugin/treewalker"
+              }
+            ],
+            "dependents": []
+          }
+        ]
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/static",
+        "name": "static",
+        "isDirectory": true,
+        "children": [
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/static/slow_move_demo.gif",
+            "name": "slow_move_demo.gif",
+            "isDirectory": false,
+            "importance": 0,
+            "dependencies": [],
+            "packageDependencies": [],
+            "dependents": []
+          },
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/static/slow_swap_demo.gif",
+            "name": "slow_swap_demo.gif",
+            "isDirectory": false,
+            "importance": 0,
+            "dependencies": [],
+            "packageDependencies": [],
+            "dependents": []
+          }
+        ]
+      },
+      {
+        "path": "/home/yuval/proj/treewalker.nvim/tests",
+        "name": "tests",
+        "isDirectory": true,
+        "children": [
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures",
+            "name": "fixtures",
+            "isDirectory": true,
+            "children": [
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/c-sharp.cs",
+                "name": "c-sharp.cs",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/c.c",
+                "name": "c.c",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/haskell.hs",
+                "name": "haskell.hs",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/html.html",
+                "name": "html.html",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/javascript.js",
+                "name": "javascript.js",
+                "isDirectory": false,
+                "importance": 3,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/lua-spec.lua",
+                "name": "lua-spec.lua",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker.util",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/treewalker.util"
+                  },
+                  {
+                    "name": "luassert.stub",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/luassert.stub"
+                  },
+                  {
+                    "name": "luassert",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/luassert"
+                  },
+                  {
+                    "name": "treewalker",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/treewalker"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/lua.lua",
+                "name": "lua.lua",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker.util",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/treewalker.util"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/markdown-h2s.md",
+                "name": "markdown-h2s.md",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/markdown.md",
+                "name": "markdown.md",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/php.php",
+                "name": "php.php",
+                "isDirectory": false,
+                "importance": 3,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/python.py",
+                "name": "python.py",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/random.not_real",
+                "name": "random.not_real",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/ruby.rb",
+                "name": "ruby.rb",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/rust.rs",
+                "name": "rust.rs",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/scheme.scm",
+                "name": "scheme.scm",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/typescript.ts",
+                "name": "typescript.ts",
+                "isDirectory": false,
+                "importance": 5,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "util",
+                    "path": "/home/yuval/proj/treewalker.nvim/node_modules/util"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/fixtures/yaml.yml",
+                "name": "yaml.yml",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              }
+            ]
+          },
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/tests/load_fixture.lua",
+            "name": "load_fixture.lua",
+            "isDirectory": false,
+            "importance": 1,
+            "dependencies": [],
+            "packageDependencies": [],
+            "dependents": []
+          },
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/tests/minimal_init.lua",
+            "name": "minimal_init.lua",
+            "isDirectory": false,
+            "importance": 2,
+            "dependencies": [],
+            "packageDependencies": [
+              {
+                "name": "nvim-treesitter.configs",
+                "path": "/home/yuval/proj/treewalker.nvim/tests/nvim-treesitter.configs"
+              }
+            ],
+            "dependents": []
+          },
+          {
+            "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker",
+            "name": "treewalker",
+            "isDirectory": true,
+            "children": [
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/c_sharp_spec.lua",
+                "name": "c_sharp_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/c_spec.lua",
+                "name": "c_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/haskell_spec.lua",
+                "name": "haskell_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/helpers.lua",
+                "name": "helpers.lua",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "luassert",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/luassert"
+                  },
+                  {
+                    "name": "treewalker.lines",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.lines"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/highlight_spec.lua",
+                "name": "highlight_spec.lua",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/html_spec.lua",
+                "name": "html_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/jump_list_spec.lua",
+                "name": "jump_list_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/lines_spec.lua",
+                "name": "lines_spec.lua",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker.lines",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.lines"
+                  },
+                  {
+                    "name": "luassert",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/luassert"
+                  },
+                  {
+                    "name": "tests.load_fixture",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/tests.load_fixture"
+                  },
+                  {
+                    "name": "treewalker.util",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.util"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec.lua",
+                "name": "lua_spec.lua",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker.util",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.util"
+                  },
+                  {
+                    "name": "treewalker.util",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.util"
+                  }
+                ],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/lua_spec_spec.lua",
+                "name": "lua_spec_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/markdown_spec.lua",
+                "name": "markdown_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/missing_parser_spec.lua",
+                "name": "missing_parser_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/options_spec.lua",
+                "name": "options_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/php_spec.lua",
+                "name": "php_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/python_spec.lua",
+                "name": "python_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/ruby_spec.lua",
+                "name": "ruby_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/rust_spec.lua",
+                "name": "rust_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/typescript_spec.lua",
+                "name": "typescript_spec.lua",
+                "isDirectory": false,
+                "importance": 1,
+                "dependencies": [],
+                "packageDependencies": [],
+                "dependents": []
+              },
+              {
+                "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/util_spec.lua",
+                "name": "util_spec.lua",
+                "isDirectory": false,
+                "importance": 2,
+                "dependencies": [],
+                "packageDependencies": [
+                  {
+                    "name": "treewalker.util",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/treewalker.util"
+                  },
+                  {
+                    "name": "luassert.stub",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/luassert.stub"
+                  },
+                  {
+                    "name": "luassert",
+                    "path": "/home/yuval/proj/treewalker.nvim/tests/treewalker/luassert"
+                  }
+                ],
+                "dependents": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

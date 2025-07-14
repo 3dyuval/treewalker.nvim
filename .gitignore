@@ -19,3 +19,5 @@ debug.log
 
 # Fer claude
 settings.local.json
+FileScopeMCP-tree.json
+mcp-debug.log

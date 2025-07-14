@@ -8,7 +8,7 @@
         ·
         <a href="#Mapping">Mapping</a>
         ·
-        <a href="#parent-navigation">Parent Navigation</a>
+        <a href="#parent-navigation">Treewalker Parent</a>
     </h4>
     <a href="https://neovim.io/">
         <img alt="Neovim" style="height: 20px;" src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&amp;style=for-the-badge&amp;logo=neovim&amp;logoColor=white">
@@ -241,7 +241,7 @@ is publicly archived and I could not get it to work :/
 (automated testing), and has organized code. So the plugin should be pretty
 stable. I believe `Treewalker` usage is a little bit simpler and more intuitive.
 `Treewalker` is missing the visual selection swap feature that syntax-tree-surfer
-has, though. (See [#32](https://github.com/aaronik/treewalker.nvim/issues/32))
+has, though. (See [#32](https://github.com/3dyuval/treewalker.nvim/issues/32))
 
 * [nvim-treehopper](https://github.com/mfussenegger/nvim-treehopper)
 is similar in that it uses the AST to navigate, but it takes more of a
@@ -286,7 +286,7 @@ textobject.
 
 ## **🚀 About This Fork**
 
-**This is a fork of [aaronik/treewalker.nvim](https://github.com/aaronik/treewalker.nvim) that adds parent navigation functionality.** 
+**This is a fork of [3dyuval/treewalker.nvim](https://github.com/3dyuval/treewalker.nvim) that adds parent navigation functionality.** 
 
 The original treewalker.nvim is an excellent plugin for syntax-aware navigation. This fork extends it with the ability to navigate up the syntax tree hierarchy to parent nodes, solving the "can navigate in but not out" problem while maintaining treewalker's philosophy of skipping uninteresting nodes.
 

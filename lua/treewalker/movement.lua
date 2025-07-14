@@ -1,7 +1,6 @@
 local operations = require("treewalker.operations")
 local targets = require("treewalker.targets")
 local nodes = require("treewalker.nodes")
-local parent = require("treewalker.parent")
 
 local M = {}
 
@@ -92,7 +91,21 @@ end
 
 ---@return nil
 function M.move_parent()
-	parent.goto_nontrivial_parent()
+	local node = nodes.get_current()
+	local target, row = targets.parent()
+	if not target or not row then
+		return
+	end
+
+	local is_neighbor = nodes.have_neighbor_srow(node, target)
+
+	if not is_neighbor then
+		add_jumplist_for_move("move_parent")
+	end
+	operations.jump(target, row)
+	if not is_neighbor then
+		add_jumplist_for_move("move_parent")
+	end
 end
 
 return M

@@ -221,6 +221,9 @@ vim.keymap.set({ 'n', 'v' }, '<C-l>', '<cmd>Treewalker Right<cr>', { silent = tr
 -- 🚀 NEW: Parent navigation (this fork only)
 vim.keymap.set({ 'n', 'v' }, '<C-p>', '<cmd>Treewalker Parent<cr>', { silent = true })
 
+-- Alternative: You can also call the parent function directly
+-- vim.keymap.set({ 'n', 'v' }, '<C-p>', require('treewalker').goto_parent, { silent = true })
+
 -- swapping
 vim.keymap.set('n', '<C-S-k>', '<cmd>Treewalker SwapUp<cr>', { silent = true })
 vim.keymap.set('n', '<C-S-j>', '<cmd>Treewalker SwapDown<cr>', { silent = true })

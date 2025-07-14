@@ -81,4 +81,23 @@ function M.down()
 	return candidate, candidate_row
 end
 
+---@return TSNode | nil, integer | nil
+function M.parent()
+	if util.is_markdown_file() then
+		return markdown_targets.out()
+	end
+	local cursor = nodes.get_current()
+	local parent = cursor:parent()
+
+	while parent do
+		-- Only require that it's a valid jump target - keep it simple!
+		if nodes.is_jump_target(parent) then
+			local row = nodes.get_srow(parent)
+			return parent, row
+		end
+		parent = parent:parent()
+	end
+	return nil, nil
+end
+
 return M

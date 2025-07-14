@@ -1,6 +1,5 @@
 local movement = require("treewalker.movement")
 local swap = require("treewalker.swap")
-local parent = require("treewalker.parent")
 local options = require("treewalker.options")
 
 local Treewalker = {}
@@ -63,6 +62,6 @@ Treewalker.swap_down = ensuring_parser(swap.swap_down)
 Treewalker.swap_right = ensuring_parser(swap.swap_right)
 Treewalker.swap_left = ensuring_parser(swap.swap_left)
 
-Treewalker.goto_parent = ensuring_parser(parent.goto_nontrivial_parent)
+Treewalker.goto_parent = ensuring_parser(movement.move_parent)
 
 return Treewalker

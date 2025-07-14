@@ -65,8 +65,9 @@ end
 ---@param node TSNode
 ---@param row integer
 function M.jump(node, row)
-	vim.api.nvim_win_set_cursor(0, { row, 0 })
-	vim.cmd("normal! ^") -- Jump to start of line
+	local _, start_col = node:range()
+	-- Use 1-indexed row (already provided) and 0-indexed column (from treesitter)
+	vim.api.nvim_win_set_cursor(0, { row, start_col })
 	if require("treewalker").opts.highlight then
 		local duration = require("treewalker").opts.highlight_duration
 		local hl_group = require("treewalker").opts.highlight_group
